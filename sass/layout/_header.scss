@@ -1,0 +1,65 @@
+.header-image {
+  background-image: url(../img/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 75vh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+
+  &__overlay {
+    background-color: var(--black-overlay);
+    height: 75vh;
+  }
+}
+
+.header {
+  height: 75vh;
+  &__text-box {
+    margin-top: 8rem;
+  }
+}
+
+.navbar {
+  padding-top: 4rem;
+  height: 14rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 100%;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-black);
+      transform: scale(1.1);
+    }
+  }
+
+  &__list-item {
+    font-size: 1.3rem;
+    list-style: none;
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__list-link {
+    &:visited,
+    &:link {
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+      border-radius: 4rem;
+      min-width: 7rem;
+      text-align: center;
+      transition: all 0.2s;
+      cursor: pointer;
+      color: var(--color-white);
+    }
+  }
+}

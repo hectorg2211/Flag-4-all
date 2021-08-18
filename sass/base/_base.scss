@@ -1,0 +1,26 @@
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // Defining 1 rem
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.center-container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 65vw;
+
+  
+}
