@@ -6,9 +6,16 @@
 }
 
 .schedule-section {
-  width: 152%;
-  left: -17.5vw;
+  width: 100%;
   position: relative;
-  padding: 7rem;
+  padding: 7rem 0;
+  color: var(--color-white);
+}
+
+.background {
   background-color: var(--color-secondary);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }

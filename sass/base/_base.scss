@@ -1,4 +1,3 @@
-
 *,
 *::after,
 *::before {
@@ -17,10 +16,7 @@ body {
 }
 
 .center-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 0 auto;
   width: 65vw;
-
-  
+  z-index: 10;
 }

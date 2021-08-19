@@ -1,0 +1,72 @@
+.schedule-box {
+  background-color: var(--color-white);
+  border-radius: 4rem;
+  height: 100%;
+  display: grid;
+  overflow: hidden;
+  padding: 2rem;
+  width: 125%;
+  transform: translate(-15%);
+  align-items: center;
+
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 2.5rem;
+
+  &__element {
+    background-color: var(--color-white);
+    border-radius: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--blue {
+      border: 5px solid var(--men);
+    }
+
+    &--pink {
+      border: 5px solid var(--girls);
+    }
+
+    &--green {
+      border: 5px solid var(--mixed);
+    }
+
+    &--big {
+      width: 200%;
+      height: 180%;
+      span {
+        font-size: 2rem;
+      }
+    }
+
+    span {
+      color: var(--vs);
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0 0.5rem;
+      align-self: center;
+    }
+  }
+
+  .grey-bar {
+    background-color: var(--color-grey);
+    height: 0.8rem;
+    border-radius: 50rem;
+    width: 30%;
+
+    &--1 {
+      grid-column: 2 / -1;
+      height: 1.5rem;
+      width: 100%;
+    }
+
+    &--2 {
+      grid-column: 1 / 3;
+      grid-row: 5 / 6;
+      height: 1.5rem;
+      width: 100%;
+    }
+  }
+}

@@ -28,12 +28,24 @@ body {
 
 .heading-secondary {
   font-size: 4rem;
+  margin-bottom: -1rem;
+  &--1 {
+    color: var(--color-primary);
+  }
+  &--2 {
+    color: var(--color-white);
+  }
 }
 
 .heading-tertiary {
   font-size: 2rem;
-  font-weight: 300;
-  color: var(--color-secondary);
+  font-weight: 600;
+  &--1 {
+    color: var(--color-secondary);
+  }
+  &--2 {
+    color: var(--color-primary);
+  }
 }
 
 .heading-quaternary {

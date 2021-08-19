@@ -1,15 +1,18 @@
 .btn {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 600;
   color: var(--color-white);
-  background-color: var(--color-secondary);
   text-decoration: none;
   padding: 0.5rem 5rem;
   border-radius: 40rem;
   transition: all 0.2s;
   display: inline-block;
 
-  &-primary {
+  &--1 {
+    background-color: var(--color-secondary);
+  }
+  &--2 {
+    background-color: var(--color-primary);
   }
 
   &:hover {
