@@ -7,6 +7,8 @@
   border-radius: 40rem;
   transition: all 0.2s;
   display: inline-block;
+  margin: auto 0;
+  justify-self: end;
 
   &--1 {
     background-color: var(--color-secondary);

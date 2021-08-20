@@ -47,6 +47,28 @@
     align-items: center;
     margin: 0 auto;
   }
+
+  &__info-button {
+    margin: 4rem auto 0 auto;
+    width: 80%;
+    display: grid;
+
+    justify-items: center;
+    grid-template-columns: 4fr 3rem 2fr;
+
+    .white-separator {
+      background-color: var(--color-white);
+      width: 1rem;
+      border-radius: 10rem;
+    }
+
+    .paragraph {
+      font-size: 1.7rem;
+      justify-self: center;
+      margin-bottom: 0;
+      color: var(--color-white);
+    }
+  }
 }
 
 .icon {
