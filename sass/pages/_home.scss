@@ -1,5 +1,6 @@
 .about-section {
   width: 100%;
+  background-color: var(--color-white);
   overflow: hidden;
   padding: 7rem 0;
   display: flex;
@@ -7,15 +8,12 @@
 
 .schedule-section {
   width: 100%;
-  position: relative;
   padding: 7rem 0;
+  background-color: var(--color-secondary);
   color: var(--color-white);
 }
 
-.background {
-  background-color: var(--color-secondary);
-  width: 100%;
-  position: absolute;
-  left: 0;
-  z-index: -1;
+.tables-section {
+  background-color: var(--color-primary);
+  padding: 7rem 0;
 }
