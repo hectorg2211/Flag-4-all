@@ -40,13 +40,15 @@
     }
   }
 
-  &__list-item {
-    font-size: 1.3rem;
-    list-style: none;
-    display: inline-block;
+  &__list {
+    &-item {
+      font-size: 1.3rem;
+      list-style: none;
+      display: inline-block;
 
-    &:not(:last-child) {
-      margin-right: 2rem;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
     }
   }
 
