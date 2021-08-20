@@ -41,14 +41,9 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  &--1 {
-    color: var(--color-secondary);
-  }
-  &--2 {
-    color: var(--color-primary);
-  }
+  color: var(--color-white);
 }
 
 .heading-quaternary {
