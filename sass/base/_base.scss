@@ -9,6 +9,20 @@
 html {
   // Defining 1 rem
   font-size: 62.5%;
+
+  @include respond(laptop-large) {
+    // width < 1140?
+    font-size: 56.25%; // 1rem = 9px; 9px / 16px = 56.25%
+  }
+
+  @include respond(tablet) {
+    // width < 900?
+    font-size: 50%; // 1rem = 8px; 8px / 16px = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 80%; // 1rem = 12.8px; 12.8px / 16px = 80%
+  }
 }
 
 body {
@@ -17,6 +31,10 @@ body {
 
 .center-container {
   margin: 0 auto;
-  width: 65vw;
+  width: 75vw;
   z-index: 10;
+
+  @include respond(laptop) {
+    width: 95vw;
+  }
 }
