@@ -4,6 +4,22 @@
   overflow: hidden;
   padding: 7rem 0;
   display: flex;
+
+  .about {
+    display: grid;
+    grid-template-columns: minmax(28rem, 30rem) 1fr;
+    grid-template-rows: repeat(2, 14rem);
+    gap: 3rem;
+
+    @include respond(tablet) {
+      row-gap: 8rem;
+    }
+
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
 }
 
 .schedule-section {

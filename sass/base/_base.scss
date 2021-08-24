@@ -34,7 +34,7 @@ body {
   width: 75vw;
   z-index: 10;
 
-  @include respond(laptop) {
-    width: 95vw;
+  @include respond(phone) {
+    width: 70vw;
   }
 }
