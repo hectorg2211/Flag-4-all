@@ -9,9 +9,17 @@
   overflow: hidden;
   z-index: -10;
 
+  @include respond(tablet) {
+    height: 100vh;
+  }
+
   &__overlay {
     background-color: var(--black-overlay);
     height: 75vh;
+
+    @include respond(tablet) {
+      height: 100vh;
+    }
   }
 }
 
@@ -19,6 +27,13 @@
   height: 75vh;
   &__text-box {
     margin-top: 8rem;
+  }
+
+  @include respond(tablet) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -29,6 +44,10 @@
   justify-content: space-between;
   align-items: center;
 
+  @include respond(tablet) {
+    justify-content: center;
+  }
+
   &__logo {
     height: 100%;
     transition: all 0.2s;
@@ -38,15 +57,27 @@
       color: var(--color-black);
       transform: scale(1.1);
     }
+
+    @include respond(tablet) {
+      width: 70vw;
+      height: auto;
+      margin-bottom: 10%;
+    }
   }
 
-  &__list-item {
-    font-size: 1.3rem;
-    list-style: none;
-    display: inline-block;
+  &__list {
+    &-item {
+      font-size: 1.3rem;
+      list-style: none;
+      display: inline-block;
 
-    &:not(:last-child) {
-      margin-right: 2rem;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+
+    @include respond(tablet) {
+      display: none;
     }
   }
 
@@ -54,7 +85,7 @@
     &:visited,
     &:link {
       text-decoration: none;
-      padding: 0.5rem 2rem;
+      padding: 1rem 2rem;
       border-radius: 4rem;
       min-width: 7rem;
       text-align: center;

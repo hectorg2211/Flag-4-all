@@ -1,8 +1,8 @@
 .image-box {
-  min-width: 28rem;
-  height: 28rem;
+  width: 100%;
   background-image: url(../img/hector.jpg);
   background-size: cover;
   background-position: 60% 50%;
   border-radius: 4rem;
+  grid-row: 1 / 3;
 }
