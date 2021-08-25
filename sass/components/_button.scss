@@ -16,6 +16,15 @@
   &--2 {
     background-color: var(--color-primary);
   }
+  &--3 {
+    align-self: center;
+    background-color: var(--color-secondary);
+
+    @include respond(tablet) {
+      padding: 1.3rem 3rem;
+      justify-self: center;
+    }
+  }
 
   &:hover,
   &:focus {
