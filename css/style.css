@@ -56,13 +56,17 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--color-white); }
+  .heading-tertiary--1 {
+    color: var(--color-secondary); }
+  .heading-tertiary--2 {
+    color: var(--color-primary); }
 
 .heading-quaternary {
   font-size: 1.5rem;
   font-weight: 300; }
 
 .paragraph {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem; }
 
 *,
@@ -134,10 +138,11 @@ body {
     background-color: var(--color-secondary); }
   .btn--2 {
     background-color: var(--color-primary); }
-  .btn:hover {
+  .btn:hover, .btn:focus {
     background-color: var(--color-primary);
     transform: scale(1.1);
-    box-shadow: 0 0.4rem 5rem var(--black-overlay); }
+    box-shadow: 0 0.4rem 5rem var(--black-overlay);
+    outline: none; }
   .btn:active {
     transform: scale(1);
     box-shadow: 0 0.4rem 4rem var(--color-overlay); }
@@ -150,19 +155,40 @@ body {
   border-radius: 4rem;
   grid-row: 1 / 3; }
 
+.schedule {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 5rem; }
+  @media only screen and (max-width: 48em) {
+    .schedule {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 28rem;
+      row-gap: 1rem; } }
+  .schedule .btn {
+    justify-self: center; }
+
 .schedule-preview {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
   background-color: var(--color-white);
   border-radius: 4rem;
   display: grid;
   padding: 2rem;
-  width: 110%;
-  transform: translate(-10%);
+  width: 100%;
   align-items: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
-  grid-row-gap: 2.5rem; }
+  column-gap: 1rem;
+  row-gap: 2.5rem;
+  position: relative; }
+  @media only screen and (max-width: 48em) {
+    .schedule-preview {
+      row-gap: 0rem;
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+      width: 100%;
+      justify-self: center; } }
   .schedule-preview__element {
     background-color: var(--color-white);
     display: flex;
@@ -175,29 +201,53 @@ body {
       transform: scale(1.1); }
     .schedule-preview__element--blue {
       border: 5px solid var(--men); }
+      @media only screen and (max-width: 48em) {
+        .schedule-preview__element--blue {
+          border: 3px solid var(--men); } }
     .schedule-preview__element--pink {
       border: 5px solid var(--girls); }
+      @media only screen and (max-width: 48em) {
+        .schedule-preview__element--pink {
+          border: 3px solid var(--girls); } }
     .schedule-preview__element--green {
       border: 5px solid var(--mixed); }
+      @media only screen and (max-width: 48em) {
+        .schedule-preview__element--green {
+          border: 3px solid var(--mixed); } }
     .schedule-preview__element--big-1 {
-      width: 250%;
-      height: 180%;
+      position: absolute;
+      width: 15rem;
+      height: 5rem;
+      top: 1rem;
+      left: 2rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      transform: translate(-13rem);
+      transform: translate(-10rem);
       transition: all 0.2s; }
       .schedule-preview__element--big-1:hover {
         transform: translate(-13rem, -1rem); }
+      @media only screen and (max-width: 48em) {
+        .schedule-preview__element--big-1 {
+          display: none; } }
     .schedule-preview__element--big-2 {
-      width: 250%;
-      height: 180%;
+      position: absolute;
+      width: 15rem;
+      height: 5rem;
+      bottom: 1rem;
+      right: 2rem;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      transform: translate(1rem);
+      transform: translate(10rem);
       transition: all 0.2s; }
       .schedule-preview__element--big-2:hover {
         transform: translate(1rem, -1rem); }
+      @media only screen and (max-width: 48em) {
+        .schedule-preview__element--big-2 {
+          display: none; } }
   .schedule-preview__text {
     color: var(--vs);
     font-weight: 600; }
+    @media only screen and (max-width: 48em) {
+      .schedule-preview__text {
+        font-size: 1.2rem; } }
     .schedule-preview__text:hover {
       cursor: default; }
   .schedule-preview .grey-bar {
@@ -220,9 +270,15 @@ body {
         transition: all 0.2s; }
         .schedule-preview .grey-bar__big--2:hover {
           transform: scale(1.1); }
+      @media only screen and (max-width: 48em) {
+        .schedule-preview .grey-bar__big {
+          grid-column: 1 / -1; } }
     .schedule-preview .grey-bar__small {
       height: 0.8rem;
       width: 30%; }
+      @media only screen and (max-width: 48em) {
+        .schedule-preview .grey-bar__small {
+          display: none; } }
 
 .tables {
   position: relative; }

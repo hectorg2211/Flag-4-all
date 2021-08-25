@@ -56,6 +56,14 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--color-white);
+
+  &--1 {
+    color: var(--color-secondary);
+  }
+
+  &--2 {
+    color: var(--color-primary);
+  }
 }
 
 .heading-quaternary {
@@ -64,6 +72,6 @@ body {
 }
 
 .paragraph {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }

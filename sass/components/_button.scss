@@ -17,10 +17,12 @@
     background-color: var(--color-primary);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--color-primary);
     transform: scale(1.1);
     box-shadow: 0 0.4rem 5rem var(--black-overlay);
+    outline: none;
   }
 
   &:active {
